@@ -15,7 +15,7 @@
     "child_process": "^1.0.2",
     "dotenv": "^8.2.0",
     "grpc-bchrpc-node": "git+https://github.com/mazetoken/grpc-bchrpc-node.git",
-    "protons": "^2.0.0",
+    "protons": "^2.0.1",
     "slpjs": "^0.27.11",
     "synchronized-promise": "^0.3.1"
   },
