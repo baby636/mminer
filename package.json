@@ -5,7 +5,9 @@
   "main": "./src/miner.js",
   "scripts": {
     "start": "tsc && node ./src/miner.js",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Satoshi Nakamoto, Kasumi, update by B_S_Z",
   "license": "MIT",
@@ -17,7 +19,8 @@
     "grpc-bchrpc-node": "git+https://github.com/mazetoken/grpc-bchrpc-node.git",
     "protons": "^2.0.0",
     "slpjs": "^0.27.11",
-    "synchronized-promise": "^0.3.1"
+    "synchronized-promise": "^0.3.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "bchaddrjs-slp": "^0.2.12",
@@ -29,5 +32,6 @@
     "typescript": "^4.1.5",
     "typescript-tslint-plugin": "^1.0.1",
     "varint": "^6.0.0"
-  }
+  },
+  "snyk": true
 }
